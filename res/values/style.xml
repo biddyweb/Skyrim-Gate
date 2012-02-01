@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="top">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">35dp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    
+    <style name="mainbutton">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+    
+    <style name="subbanner">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">#ccffff</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+        
+    <style name="smalltextright">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">#bfbfbf</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--  
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">7dp</item>
+        -->
+    </style>
+
+    <style name="smalltextleft">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">#bfbfbf</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:typeface">serif</item>
+        <!-- You can't use these if text on the left!
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        -->
+    </style>    
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Project01Activity!</string>
+    <string name="app_name">Skyrim Gate</string>
+    <string name="apptitle">Skyrim Gate</string>
+    <string name="button01text">The Gameplay</string>
+    <string name="button02text">The World</string>
+    <string name="button03text">The More...</string>
+    <string name="page1title1">The Truth Dawns In Fire</string>
+    <string name="page1intro1">The High King of Skyrim has been murdered. 
+        In the midst of this conflict, a far more dangerous, ancient evil is awakened. </string>
+    <string name="page1intro2">Skyrim is the Northern province, home of the Nordic Stormcloaks.
+        Their worship of Talos, the Empire-maker, the Man-God, is now banned by Elf-controlled council. </string>
+
+</resources>
