@@ -16,7 +16,7 @@
             android:padding="10dp">
             <ImageButton
                 android:id="@+id/w_img1"
-                android:background="@drawable/intro01_db"
+                android:background="@drawable/intro01"
             	android:layout_width="wrap_content"
             	android:layout_height="150dp" 
                 android:layout_marginRight="10dp"            	
