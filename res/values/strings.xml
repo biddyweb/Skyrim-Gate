@@ -15,8 +15,14 @@
         
     
     
-    <string name="g_tag1">Your Game, Your Experience</string>
-    
+    <string name="g_tag1">Experience Reimagined</string>
+    <string name="g_t1">Skyrim revolutionizes the open-world fantasy epic, 
+        bringing to life a complete virtual world open for you 
+        to explore.</string>
+    <string name="g_t2">Play any type of character you can imagine, and do 
+        whatever you want; it comes to life like never before. Choose from hundreds
+         of weapons, spells, and abilities. The new character system allows you 
+         to play any way you want and define yourself through your actions.</string>
     <string name="g_tag2">Magnificent UI</string>
     
     

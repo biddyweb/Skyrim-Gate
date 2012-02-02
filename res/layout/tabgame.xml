@@ -3,13 +3,41 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-    
-         <TextView
+		<TextView
+		  android:id="@+id/g_tag1"
+		  android:text="@string/g_tag1"
+		  style="@style/subbanner"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:padding="10dp">
+            <ImageButton
+                android:id="@+id/g_img1"
+                android:background="@drawable/g_2"
+            	android:layout_width="wrap_content"
+            	android:layout_height="150dp" 
+                android:layout_marginRight="10dp"            	
+           	    android:layout_weight="0.4"/>
+            <TextView
+                android:id="@+id/g_t1"
+                android:text="@string/g_t1"
+            	android:layout_weight="0.6"
+            	android:layout_width="fill_parent"
+                style="@style/smalltextright"/>
+        </LinearLayout>    		 
+
+        <TextView
+        android:id="@+id/g_t2"
+        android:text="@string/g_t2"
+        style="@style/smalltext"/>
+                
+        <TextView
          android:id="@+id/race_intro"
          android:text="- Playable Races Gallery -"
       	 style="@style/link" /> 
       	 
-         <Gallery
+        <Gallery
          android:id="@+id/gallery_race"
          android:layout_width="fill_parent"
          android:layout_height="wrap_content" 

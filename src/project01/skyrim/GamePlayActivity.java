@@ -2,10 +2,13 @@ package project01.skyrim;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.TypedArray;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Gallery;
@@ -15,18 +18,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class GamePlayActivity extends Activity {
+public class GamePlayActivity extends Activity implements OnClickListener {	
+	TextView link_g;	
 	
 	public void onCreate(Bundle savedInstanceState) {
 		
 	        super.onCreate(savedInstanceState);
 	        setContentView(R.layout.tabgame);
-	        
+
+			link_g = (TextView) findViewById(R.id.race_intro);
+			link_g.setOnClickListener(this);
 	        
 			/*Gallery*/
 			Gallery gallery = (Gallery) findViewById(R.id.gallery_race);
 			gallery.setAdapter(new ImageAdapter(this));
-
 			gallery.setOnItemClickListener(new OnItemClickListener() {
 				public void onItemClick(AdapterView parent, View v, int position,
 						long id) {
@@ -34,8 +39,7 @@ public class GamePlayActivity extends Activity {
 							Toast.LENGTH_SHORT).show();
 				}
 			});	        	        
-	 }
-	
+	 }	
 	// Begin hacking for Gallery *********************
 	public class ImageAdapter extends BaseAdapter {
 		int mGalleryItemBackground;
@@ -54,11 +58,8 @@ public class GamePlayActivity extends Activity {
 		}
 
 		public int getCount() {	return mImageIds.length;}
-
 		public Object getItem(int position) { return position;}
-
 		public long getItemId(int position) { return position;}
-
 		public View getView(int position, View convertView, ViewGroup parent) {
 			ImageView imageView = new ImageView(mContext);
 			imageView.setImageResource(mImageIds[position]);
@@ -68,8 +69,16 @@ public class GamePlayActivity extends Activity {
 
 			return imageView;
 		}
-
 	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.uesp.net/wiki/Skyrim:Races"));
+			startActivity(browserIntent);
+		
+	}
+	
 }
 
 
