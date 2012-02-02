@@ -23,12 +23,8 @@ public class WorldActivity extends Activity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-//		if(v == link_t)    /* link example*/
-//		{
 //			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v=PjqsYzBrP-M"));
 //			startActivity(browserIntent);
-//			
-//		}
 		
 	}
 }

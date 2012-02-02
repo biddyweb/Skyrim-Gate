@@ -1,6 +1,4 @@
 package project01.skyrim;
-
-
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.media.AudioManager;
@@ -18,9 +16,6 @@ import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
-
-
-
 
 
 public class MoreActivity extends Activity implements OnClickListener, OnErrorListener{

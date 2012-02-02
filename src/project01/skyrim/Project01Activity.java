@@ -152,36 +152,26 @@ public class Project01Activity extends TabActivity implements OnClickListener, O
 		int mGalleryItemBackground;
 		private Context mContext;
 
-		private Integer[] mImageIds = { R.drawable.gallerytest,
-				R.drawable.gallerytest, R.drawable.gallerytest,
-				R.drawable.gallerytest, R.drawable.gallerytest,
-				R.drawable.gallerytest, R.drawable.gallerytest };
+		private Integer[] mImageIds = { R.drawable.race00,
+				R.drawable.race01, R.drawable.race02,
+				R.drawable.race03, R.drawable.race04,
+				R.drawable.race05 };
 
 		public ImageAdapter(Context c) {
 			mContext = c;
 			TypedArray attr = mContext
 					.obtainStyledAttributes(R.styleable.HelloGallery);
-			// mGalleryItemBackground =
-			// attr.getResourceId(R.styleable.HelloGallery_android_galleryItemBackground,
-			// 0);
 			attr.recycle();
 		}
 
-		public int getCount() {
-			return mImageIds.length;
-		}
+		public int getCount() {	return mImageIds.length;}
 
-		public Object getItem(int position) {
-			return position;
-		}
+		public Object getItem(int position) { return position;}
 
-		public long getItemId(int position) {
-			return position;
-		}
+		public long getItemId(int position) { return position;}
 
 		public View getView(int position, View convertView, ViewGroup parent) {
 			ImageView imageView = new ImageView(mContext);
-
 			imageView.setImageResource(mImageIds[position]);
 			imageView.setLayoutParams(new Gallery.LayoutParams(600, 330));
 			imageView.setScaleType(ImageView.ScaleType.FIT_XY);
