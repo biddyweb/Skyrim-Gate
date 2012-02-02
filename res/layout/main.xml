@@ -41,12 +41,6 @@
 
 			        </FrameLayout>
 
-			        <TextView
-			            android:id="@+id/textView1"
-			            android:layout_width="275dp"
-			            android:layout_height="wrap_content"
-			            android:text="Video URL"
-			            android:textAppearance="?android:attr/textAppearanceLarge" />
 
 			    </LinearLayout>
 			    

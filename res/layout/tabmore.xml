@@ -3,7 +3,14 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-
+    <TextView
+         android:id="@+id/trailer_m"
+         android:text="- Watch This Trailer Online -"
+      	 style="@style/link" />
+    <TextView
+         android:id="@+id/gate"
+         android:text="- Tap Back to World Introduction -"
+      	 style="@style/link" />
     <VideoView
         android:id="@+id/videoView1"
         android:layout_width="wrap_content"

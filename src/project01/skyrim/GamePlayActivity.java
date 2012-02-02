@@ -76,9 +76,11 @@ public class GamePlayActivity extends Activity implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
-			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.uesp.net/wiki/Skyrim:Races"));
+		if (v == link_g) {
+			Intent browserIntent = new Intent(Intent.ACTION_VIEW, 
+					Uri.parse("http://www.uesp.net/wiki/Skyrim:Races"));
 			startActivity(browserIntent);
+		}
 		
 	}
 	

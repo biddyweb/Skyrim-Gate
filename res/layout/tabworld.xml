@@ -28,11 +28,24 @@
             	android:layout_width="fill_parent"
                 style="@style/smalltextright"/>
         </LinearLayout>
-
+        
         <TextView
         android:id="@+id/w_t2"
         android:text="@string/w_t2"
         style="@style/smalltext"/>
+        
+        <TextView
+         android:id="@+id/worldg_intro"
+         android:text="- Skyrim Landscape Gallery -"
+      	 style="@style/link" /> 
+
+        <Gallery
+         android:id="@+id/gallery_world"
+         android:layout_width="wrap_content"
+         android:layout_height="200dp" 
+         android:gravity="center"
+	     android:layout_margin="20dp"
+         android:spacing="10dp"/>
         
         <!-- ################ .BuildingBlock ################ -->
 		<TextView
@@ -63,6 +76,10 @@
         android:id="@+id/w_t4"
         android:text="@string/w_t4"
         style="@style/smalltext"/> 
+        <TextView
+        android:id="@+id/w_t5"
+        android:text="@string/w_t5"
+        style="@style/smalltext"/> 
         
         <TextView
          android:id="@+id/trailer"
@@ -70,6 +87,6 @@
       	 style="@style/link" />
         <TextView
          android:id="@+id/gotomore"
-         android:text="- Watch Official Trailer Locally -"
+         android:text="(Or, you may watch it here)"
       	 style="@style/link" />  
 </LinearLayout>

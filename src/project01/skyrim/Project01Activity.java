@@ -43,7 +43,6 @@ public class Project01Activity extends TabActivity implements OnClickListener, O
 	boolean mute;
 	boolean fixposition = false;
 	TabHost tabHost;	
-	TextView link;	
 	String myLastTabId;
 	
 	
@@ -108,8 +107,8 @@ public class Project01Activity extends TabActivity implements OnClickListener, O
 		tabHost.addTab(spec);
 
 		//slect the ID = 0 tab
-		//tabHost.setCurrentTab(0);
-		this.setDefaultTab(1);
+		tabHost.setCurrentTab(1);
+		//this.setDefaultTab(1);
 		myLastTabId = null;
 		
 		tabHost.getTabWidget().getChildAt(0).setBackgroundResource(R.drawable.topbuttonbasic);
@@ -119,10 +118,6 @@ public class Project01Activity extends TabActivity implements OnClickListener, O
 		
 		tabHost.setOnTabChangedListener(this);
 		
-		/*a link which is clickable*/
-		link = (TextView) findViewById(R.id.textView1);
-        //link.setText(Html.fromHtml("<a href=\"http://google.com\">HTML Hyperlink Test</a>"));
-		link.setOnClickListener(this);
         
 		
         
@@ -184,11 +179,6 @@ public class Project01Activity extends TabActivity implements OnClickListener, O
 					
 				
 			}
-		}else if(arg0 == link)    /* link example*/
-		{
-			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v=PjqsYzBrP-M"));
-			startActivity(browserIntent);
-			
 		}
 
 	}

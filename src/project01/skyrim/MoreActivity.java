@@ -1,5 +1,6 @@
 package project01.skyrim;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -23,40 +24,39 @@ public class MoreActivity extends Activity implements OnClickListener, OnErrorLi
 	 VideoView videoView;
 	 MediaController mController;
 	 MediaPlayer mediaPlayer;
+	 TextView link_m;	
+	 TextView gate;	
 	
 	 public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
+	        setContentView(R.layout.tabmore);	  
+	        
 
-
-	        setContentView(R.layout.tabmore);
-	        
-	        VideoView videoView = (VideoView) findViewById(R.id.videoView1);  
-	        
-	        
-			videoView.setVideoURI(Uri.parse("android.resource://project01.skyrim/" + R.raw.video)); 
+			/*a link which is clickable*/
+			link_m = (TextView) findViewById(R.id.trailer_m);
+			link_m.setOnClickListener(this);
+			/*a link which is clickable*/
+			gate = (TextView) findViewById(R.id.gate);
+			gate.setOnClickListener(this);
 			
-			videoView.setBackgroundColor(BIND_AUTO_CREATE);
+	        VideoView videoView = (VideoView) findViewById(R.id.videoView1);  	        
+	        
+			videoView.setVideoURI(Uri.parse("android.resource://project01.skyrim/"
+					+ R.raw.video)); 
 			
-			       ////magic background, finally get rid of black devil flyer!!!
-			
+			videoView.setBackgroundColor(BIND_AUTO_CREATE);			
+			//magic background, finally get rid of black devil flyer!!!			
 			videoView.setOnClickListener(this);
-			videoView.setOnErrorListener(this);
-			
+			videoView.setOnErrorListener(this);			
 			
 			//videoView.setVideoURI(Uri.parse("rtsp://rtsp.youtube.com/youtube/videos/S2eoCqwBCQI/video.3gp")); 
 			mController = new MediaController(this);
-			
-		
-			videoView.setMediaController(mController); 
-//			 
-//			videoView.setOnClickListener(this);
-			
+				
+			videoView.setMediaController(mController); 			
 			videoView.seekTo(5000);
 			videoView.requestFocus();
 			videoView.start();
 			
-			
-	        
 	        
 //	        SurfaceView surfaceView = (SurfaceView) findViewById(R.id.surfaceView);
 //	        SurfaceHolder surfaceHolder = surfaceView.getHolder();
@@ -87,7 +87,15 @@ public class MoreActivity extends Activity implements OnClickListener, OnErrorLi
 		//videoView.start();
 		//videoView.setBackgroundColor(BIND_AUTO_CREATE);
 		//videoView.setBackgroundResource(BIND_AUTO_CREATE);
-		
+		if (arg0 == link_m) {
+			Intent browserIntent = new Intent(Intent.ACTION_VIEW, 
+					Uri.parse("http://www.youtube.com/watch?v=PjqsYzBrP-M"));
+			startActivity(browserIntent);
+		} else if (arg0 == gate) {
+			Project01Activity ParentActivity;
+            ParentActivity = (Project01Activity) this.getParent();
+            ParentActivity.switchTab(1);	
+		} 
 	}
 	
 	

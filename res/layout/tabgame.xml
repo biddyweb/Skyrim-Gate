@@ -69,5 +69,9 @@
             	android:layout_width="fill_parent"
                 style="@style/smalltextright"/>
         </LinearLayout>    		         
-        
+   
+        <TextView
+        android:id="@+id/g_t4"
+        android:text="@string/g_t4"
+        style="@style/smalltext"/>     
 </LinearLayout>

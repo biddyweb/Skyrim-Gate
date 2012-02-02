@@ -26,7 +26,11 @@
         whatever you want; it comes to life like never before. Choose from hundreds
          of weapons, spells, and abilities. The new character system allows you 
          to play any way you want and define yourself through your actions.</string>
-    
+    <string name="g_t4">Dragon Shouts (a.k.a. The Voice or Thuum) are phrases of Dragon
+         Language that can be used to unleash powerful effects, including breathing fire,
+          freezing time or summoning ancient heroes. Dragons are naturally able to 
+          use Dragon Shouts, but very few people are able to use them. Your 
+          character, as the Dovahkiin, can use the Thuum as naturally as Dragons.</string>
     
     
     <string name="w_tag1">The Truth Dawns In Fire</string>
