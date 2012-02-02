@@ -26,6 +26,7 @@ import android.widget.Gallery;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.MediaController;
+import android.widget.ScrollView;
 import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TextView;
@@ -37,16 +38,12 @@ public class Project01Activity extends TabActivity implements OnClickListener, O
 
 	Menu menu;
 	MediaPlayer bgm;
-
 	ImageButton poster;
-
 	boolean playing;
 	boolean mute;
-
-	TabHost tabHost;
-	
-	TextView link;
-	
+	boolean fixposition = false;
+	TabHost tabHost;	
+	TextView link;	
 	String myLastTabId;
 	
 	
@@ -55,6 +52,8 @@ public class Project01Activity extends TabActivity implements OnClickListener, O
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
+		
+		// Reset elements' layout, adpoting fluid design
 		
 		
 		
@@ -139,6 +138,13 @@ public class Project01Activity extends TabActivity implements OnClickListener, O
 						Toast.LENGTH_SHORT).show();
 			}
 		});
+		
+		if (!fixposition) {
+			ScrollView s = (ScrollView) findViewById(R.id.scroller);
+			s.smoothScrollTo(0,0);
+			fixposition = true;
+		}
+		
 		
 	}
 
