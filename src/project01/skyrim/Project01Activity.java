@@ -126,18 +126,7 @@ public class Project01Activity extends TabActivity implements OnClickListener, O
         
 		
         
-		/*Gallery*/
-		Gallery gallery = (Gallery) findViewById(R.id.gallery1);
-		gallery.setAdapter(new ImageAdapter(this));
 
-		gallery.setOnItemClickListener(new OnItemClickListener() {
-			public void onItemClick(AdapterView parent, View v, int position,
-					long id) {
-				Toast.makeText(Project01Activity.this, "" + position,
-						Toast.LENGTH_SHORT).show();
-			}
-		});
-		
 		if (!fixposition) {
 			ScrollView s = (ScrollView) findViewById(R.id.scroller);
 			s.smoothScrollTo(0,0);
@@ -147,40 +136,7 @@ public class Project01Activity extends TabActivity implements OnClickListener, O
 		
 	}
 
-	// Begin hacking for Gallery *********************
-	public class ImageAdapter extends BaseAdapter {
-		int mGalleryItemBackground;
-		private Context mContext;
 
-		private Integer[] mImageIds = { R.drawable.race00,
-				R.drawable.race01, R.drawable.race02,
-				R.drawable.race03, R.drawable.race04,
-				R.drawable.race05 };
-
-		public ImageAdapter(Context c) {
-			mContext = c;
-			TypedArray attr = mContext
-					.obtainStyledAttributes(R.styleable.HelloGallery);
-			attr.recycle();
-		}
-
-		public int getCount() {	return mImageIds.length;}
-
-		public Object getItem(int position) { return position;}
-
-		public long getItemId(int position) { return position;}
-
-		public View getView(int position, View convertView, ViewGroup parent) {
-			ImageView imageView = new ImageView(mContext);
-			imageView.setImageResource(mImageIds[position]);
-			imageView.setLayoutParams(new Gallery.LayoutParams(600, 330));
-			imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-			imageView.setBackgroundResource(mGalleryItemBackground);
-
-			return imageView;
-		}
-
-	}
 
 	// Finish hacking for Gallery *********************
 

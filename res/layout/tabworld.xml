@@ -65,7 +65,7 @@
         style="@style/smalltext"/> 
         
         <TextView
-            android:id="@+id/trailer"
-            android:text="- Watch Official Trailer Online -"
-        	style="@style/link" /> 
+         android:id="@+id/trailer"
+         android:text="- Watch Official Trailer Online -"
+      	 style="@style/link" /> 
 </LinearLayout>

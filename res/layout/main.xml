@@ -51,13 +51,7 @@
 			    </LinearLayout>
 			    
 			</TabHost>
-        <Gallery
-            android:id="@+id/gallery1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" 
-            android:gravity="center"
-	        android:layout_margin="20dp"
-            android:spacing="10dp"/>
+
 	
 	</LinearLayout>
 	
