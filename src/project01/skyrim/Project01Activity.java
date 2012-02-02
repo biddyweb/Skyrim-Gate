@@ -53,8 +53,7 @@ public class Project01Activity extends TabActivity implements OnClickListener, O
 		setContentView(R.layout.main);
 
 		
-		// Reset elements' layout, adpoting fluid design
-		
+		// Reset elements' layout, adopting fluid design
 		
 		
 		
