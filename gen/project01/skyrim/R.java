@@ -41,6 +41,7 @@ public final class R {
         public static final int g_tag1=0x7f070003;
         public static final int g_tag2=0x7f070009;
         public static final int gallery_race=0x7f070008;
+        public static final int gotomore=0x7f070016;
         public static final int race_intro=0x7f070007;
         public static final int scroller=0x7f070000;
         public static final int textView1=0x7f070002;
@@ -72,10 +73,10 @@ public final class R {
         public static final int button02text=0x7f050004;
         public static final int button03text=0x7f050005;
         public static final int g_t1=0x7f05000a;
-        public static final int g_t2=0x7f05000b;
+        public static final int g_t2=0x7f05000d;
         public static final int g_t3=0x7f05000c;
         public static final int g_tag1=0x7f050009;
-        public static final int g_tag2=0x7f05000d;
+        public static final int g_tag2=0x7f05000b;
         public static final int hello=0x7f050000;
         public static final int page1intro1=0x7f050007;
         public static final int page1intro2=0x7f050008;

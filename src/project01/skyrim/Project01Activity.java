@@ -109,7 +109,7 @@ public class Project01Activity extends TabActivity implements OnClickListener, O
 
 		//slect the ID = 0 tab
 		//tabHost.setCurrentTab(0);
-		//this.setDefaultTab(2);
+		this.setDefaultTab(1);
 		myLastTabId = null;
 		
 		tabHost.getTabWidget().getChildAt(0).setBackgroundResource(R.drawable.topbuttonbasic);
@@ -136,7 +136,9 @@ public class Project01Activity extends TabActivity implements OnClickListener, O
 		
 	}
 
-
+	public void switchTab(int tab){
+        tabHost.setCurrentTab(tab);
+	}
 
 	// Finish hacking for Gallery *********************
 

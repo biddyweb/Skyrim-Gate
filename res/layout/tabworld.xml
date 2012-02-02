@@ -67,5 +67,9 @@
         <TextView
          android:id="@+id/trailer"
          android:text="- Watch Official Trailer Online -"
-      	 style="@style/link" /> 
+      	 style="@style/link" />
+        <TextView
+         android:id="@+id/gotomore"
+         android:text="- Watch Official Trailer Locally -"
+      	 style="@style/link" />  
 </LinearLayout>

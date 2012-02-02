@@ -45,9 +45,12 @@ public class GamePlayActivity extends Activity implements OnClickListener {
 		int mGalleryItemBackground;
 		private Context mContext;
 
-		private Integer[] mImageIds = { R.drawable.race00,
-				R.drawable.race01, R.drawable.race02,
-				R.drawable.race03, R.drawable.race04,
+		private Integer[] mImageIds = { 
+				R.drawable.race02, 
+				R.drawable.race00,
+				R.drawable.race01,
+				R.drawable.race03, 
+				R.drawable.race04,
 				R.drawable.race05 };
 
 		public ImageAdapter(Context c) {
