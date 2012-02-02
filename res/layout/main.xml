@@ -11,89 +11,56 @@
 	    android:layout_height="wrap_content"
 	    android:orientation="vertical" >
 	
-	    <Button
+	    <ImageButton
 	        android:id="@+id/button1"
 	        android:layout_height="543dp"
 	        android:text="@string/apptitle" 
 	        android:background="@drawable/top01"
 	        style="@style/top"/>
 	
-	    <LinearLayout
-	        android:id="@+id/linearLayout1"
-	        android:layout_width="fill_parent"
-	        android:layout_height="wrap_content" >
-	
-	        <Button
-	            android:id="@+id/button2"
-	            android:text="@string/button01text" 
-	            style="@style/mainbutton"
-	            android:background="@drawable/hover"/>
-	        <Button
-	            android:id="@+id/button3"
-	            android:text="@string/button02text" 
-	            style="@style/mainbutton"
-	            android:background="@drawable/hover"/>
-	        <Button
-	            android:id="@+id/button4"
-	            android:text="@string/button03text" 
-	            style="@style/mainbutton"
-	            android:background="@drawable/hover"/>
-	
-	    </LinearLayout>
+	    
+		    <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:id="@android:id/tabhost"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent">
+			    
+		        
+		        
+			    <LinearLayout
+			        android:orientation="vertical"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:padding="5dp">
+
+			        <TabWidget
+			            android:id="@android:id/tabs"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content" />
+			        <FrameLayout
+			            android:id="@android:id/tabcontent"
+			            android:layout_width="fill_parent"
+			            android:layout_height="fill_parent"
+			            android:padding="5dp" >
+
+			        </FrameLayout>
+
+			        <TextView
+			            android:id="@+id/textView1"
+			            android:layout_width="275dp"
+			            android:layout_height="wrap_content"
+			            android:text="Video URL"
+			            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			    </LinearLayout>
+			    
+			    
+			    
+			    
+			</TabHost>
+			    
+	   
 
 
-	    <!-- ################ .BuildingBlock ################ -->
-		<TextView
-		  android:id="@+id/textView1"
-		  android:text="@string/page1title1"
-		  style="@style/subbanner"/>
-        <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" 
-            android:layout_weight="0" 
-            android:padding="10dp">
-            <ImageView
-                android:id="@+id/imageView2"
-                android:src="@drawable/intro01_db"
-                android:layout_width="200dp"
-                android:layout_height="130dp"
-                android:layout_marginRight="10dp"/>
-            <TextView
-                android:id="@+id/textView2"
-                android:text="@string/page1intro1"
-                style="@style/smalltextright"/>
-        </LinearLayout>
-        
-        <!-- ################ .DivisionLine ################ -->
-        
-	    <!-- ################ .BuildingBlock ################ -->
-
-       <LinearLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" 
-            android:layout_weight="0"
-            android:padding="10dp">
-            <TextView
-                android:id="@+id/textView3"
-                style="@style/smalltextright"
-                android:layout_width="130dp" 
-                android:text="@string/page1intro2" 
-                android:layout_marginRight="10dp"/>
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="200dp"
-                android:layout_height="150dp"
-                android:src="@drawable/intro02_white_2"/>
-
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/fancyliner" />
-
-        </LinearLayout>
 
         <Gallery
             android:id="@+id/gallery1"

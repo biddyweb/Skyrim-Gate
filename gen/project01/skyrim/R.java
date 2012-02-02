@@ -18,94 +18,74 @@ public final class R {
         public static final int fancyliner2=0x7f020004;
         public static final int gallerytest=0x7f020005;
         public static final int hover=0x7f020006;
-        public static final int ic_action_attach=0x7f020007;
-        public static final int ic_action_call=0x7f020008;
-        public static final int ic_action_copy=0x7f020009;
-        public static final int ic_action_cut=0x7f02000a;
-        public static final int ic_action_delete=0x7f02000b;
-        public static final int ic_action_done=0x7f02000c;
-        public static final int ic_action_edit=0x7f02000d;
-        public static final int ic_action_locate=0x7f02000e;
-        public static final int ic_action_mail=0x7f02000f;
-        public static final int ic_action_mail_add=0x7f020010;
-        public static final int ic_action_microphone=0x7f020011;
-        public static final int ic_action_overflow=0x7f020012;
-        public static final int ic_action_paste=0x7f020013;
-        public static final int ic_action_photo=0x7f020014;
-        public static final int ic_action_refresh=0x7f020015;
-        public static final int ic_action_search=0x7f020016;
-        public static final int ic_action_select_all=0x7f020017;
-        public static final int ic_action_send=0x7f020018;
-        public static final int ic_action_share=0x7f020019;
-        public static final int ic_action_star=0x7f02001a;
-        public static final int ic_action_user=0x7f02001b;
-        public static final int ic_action_user_add=0x7f02001c;
-        public static final int ic_action_video=0x7f02001d;
-        public static final int ic_launcher=0x7f02001e;
-        public static final int intro01_db=0x7f02001f;
-        public static final int intro02_white=0x7f020020;
-        public static final int intro02_white_2=0x7f020021;
-        public static final int mus_combat_boss_02=0x7f020022;
-        public static final int skyrimcover=0x7f020023;
-        public static final int thumbskyrim=0x7f020024;
-        public static final int top01=0x7f020025;
-        public static final int topbuttonbasic=0x7f020026;
-        public static final int topbuttoncenter=0x7f020027;
-        public static final int topbuttonhover=0x7f020028;
+        public static final int ic_launcher=0x7f020007;
+        public static final int intro01_db=0x7f020008;
+        public static final int intro02_white=0x7f020009;
+        public static final int intro02_white_2=0x7f02000a;
+        public static final int skyrimcover=0x7f02000b;
+        public static final int thumbskyrim=0x7f02000c;
+        public static final int top01=0x7f02000d;
+        public static final int topbuttonbasic=0x7f02000e;
+        public static final int topbuttoncenter=0x7f02000f;
+        public static final int topbuttonhover=0x7f020010;
+        public static final int topsmall_1=0x7f020011;
+        public static final int topsmall_1x=0x7f020012;
+        public static final int topsmall_2=0x7f020013;
+        public static final int topsmall_2x=0x7f020014;
+        public static final int white=0x7f020015;
     }
     public static final class id {
         public static final int button1=0x7f070001;
-        public static final int button2=0x7f070003;
-        public static final int button3=0x7f070004;
-        public static final int button4=0x7f070005;
-        public static final int gallery1=0x7f07000e;
-        public static final int icon01=0x7f07000f;
-        public static final int icon02=0x7f070011;
-        public static final int imageView1=0x7f07000d;
-        public static final int imageView2=0x7f070008;
-        public static final int imageView3=0x7f07000c;
-        public static final int linearLayout1=0x7f070002;
-        public static final int linearLayout2=0x7f070007;
-        public static final int linearLayout3=0x7f07000a;
+        public static final int gallery1=0x7f070003;
+        public static final int imageView1=0x7f07000a;
+        public static final int imageView2=0x7f070005;
+        public static final int imageView3=0x7f070009;
+        public static final int imageView4=0x7f07000c;
+        public static final int linearLayout2=0x7f070004;
+        public static final int linearLayout3=0x7f070007;
         public static final int scroller=0x7f070000;
-        public static final int text=0x7f070010;
-        public static final int textView1=0x7f070006;
-        public static final int textView2=0x7f070009;
-        public static final int textView3=0x7f07000b;
+        public static final int textView1=0x7f070002;
+        public static final int textView2=0x7f070006;
+        public static final int textView3=0x7f070008;
+        public static final int videoView1=0x7f07000b;
     }
     public static final class layout {
         public static final int main=0x7f030000;
+        public static final int tabgame=0x7f030001;
+        public static final int tabmore=0x7f030002;
+        public static final int tabworld=0x7f030003;
     }
-    public static final class menu {
-        public static final int menu=0x7f060000;
+    public static final class raw {
+        public static final int mus_combat_boss_02=0x7f040000;
+        public static final int video=0x7f040001;
     }
     public static final class string {
-        public static final int app_name=0x7f040001;
-        public static final int apptitle=0x7f040002;
-        public static final int button01text=0x7f040003;
-        public static final int button02text=0x7f040004;
-        public static final int button03text=0x7f040005;
-        public static final int hello=0x7f040000;
-        public static final int page1intro1=0x7f040007;
-        public static final int page1intro2=0x7f040008;
-        public static final int page1title1=0x7f040006;
+        public static final int app_name=0x7f050001;
+        public static final int apptitle=0x7f050002;
+        public static final int button01text=0x7f050003;
+        public static final int button02text=0x7f050004;
+        public static final int button03text=0x7f050005;
+        public static final int hello=0x7f050000;
+        public static final int page1intro1=0x7f050007;
+        public static final int page1intro2=0x7f050008;
+        public static final int page1title1=0x7f050006;
     }
     public static final class style {
-        public static final int mainbutton=0x7f050001;
+        public static final int mainbutton=0x7f060001;
         /**  You can't use these if text on the left!
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         
          */
-        public static final int smalltextleft=0x7f050004;
+        public static final int smalltextleft=0x7f060004;
         /**   
         <item name="android:layout_marginRight">10dp</item>
         <item name="android:layout_marginTop">7dp</item>
         
          */
-        public static final int smalltextright=0x7f050003;
-        public static final int subbanner=0x7f050002;
-        public static final int top=0x7f050000;
+        public static final int smalltextright=0x7f060003;
+        public static final int subbanner=0x7f060002;
+        public static final int top=0x7f060000;
     }
     public static final class styleable {
         /** Attributes that can be used with a HelloGallery.
