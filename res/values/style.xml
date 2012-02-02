@@ -26,6 +26,18 @@
         <item name="android:layout_marginTop">20dp</item>
     </style>
     
+    <style name="link">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">#ce5333</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>      
+      
     <style name="smalltext">
         <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
         <item name="android:textColor">#bfbfbf</item>
@@ -33,12 +45,11 @@
         <item name="android:typeface">serif</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_margin">10dp</item>
-        <!--  
         <item name="android:layout_marginRight">10dp</item>
-        <item name="android:layout_marginTop">7dp</item>
-        -->
-    </style>        
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>   
+    
     <style name="smalltextright">
         <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
         <item name="android:textColor">#bfbfbf</item>

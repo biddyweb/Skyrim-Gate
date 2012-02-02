@@ -9,8 +9,30 @@
     <string name="button03text">The More...</string>
     <string name="page1title1">The Truth Dawns In Fire</string>
     <string name="page1intro1">The High King of Skyrim has been murdered. 
-        In the midst of this conflict, a far more dangerous, ancient evil is awakened. </string>
-    <string name="page1intro2">Skyrim is the Northern province, home of the Nordic Stormcloaks.
-        Their worship of Talos, the Empire-maker, the Man-God, is now banned by Elf-controlled council. </string>
+        In the midst, a far more dangerous, ancient evil is awakened. </string>
+    <string name="page1intro2">The High King of Skyrim has been murdered. 
+        In the midst, a far more dangerous, ancient evil is awakened. </string>
+        
+    
+    
+    <string name="w_tag1">The Truth Dawns In Fire</string>
+    <string name="w_t1">The High King of Skyrim has been murdered. 
+        In the midst, a far more dangerous, ancient evil is awakened. </string>
+    <string name="w_t2">Skyrim is the Northern province, home of the Nords. 
+        After the Crisis of Oblivion 200 years ago, their worship of Talos, 
+        the Empire-maker, the Man-God, is now banned by Elf-controlled council. 
+        With the death of High King Torygg, the flood gates of civil war break loose, 
+        and brothers are slaying brothers across the frozen tundras and rocky crags. </string>
+        
+    <string name="w_tag2">Myth of Elder Scroll </string>
+    <string name="w_t3">A great prophecy has been foretold in the Elder Scrolls; 
+        one that foretells the return of Tamriel’s primeval darkness, the Dragons. </string>
+    <string name="w_t4">The scrolls also tell of the coming of a mortal born with 
+        the soul of a dragon, the "Dovahkiin" or Dragonborn. One who will have the power 
+        to permanently defeat his greatest foe and end the dark reign of the consumer of 
+        worlds: Alduin.</string>
 
+    <string name="w_t5">Now great adventurer, free yourself from bondage; take up blade or spell,
+         bow or axe; fulfill your destiny or watch as the world ends around you. 
+         Welcome to the land of heroes and deities, Skyrim.</string>
 </resources>

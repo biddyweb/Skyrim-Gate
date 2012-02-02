@@ -53,15 +53,7 @@
 
 			    </LinearLayout>
 			    
-			    
-			    
-			    
 			</TabHost>
-			    
-	   
-
-
-
         <Gallery
             android:id="@+id/gallery1"
             android:layout_width="fill_parent"
