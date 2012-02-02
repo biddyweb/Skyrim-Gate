@@ -51,7 +51,7 @@ public class MoreActivity extends Activity implements OnClickListener, OnErrorLi
 //			 
 //			videoView.setOnClickListener(this);
 			
-			//videoView.seekTo(5000);
+			videoView.seekTo(5000);
 			videoView.requestFocus();
 			videoView.start();
 			
